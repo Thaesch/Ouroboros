@@ -1,14 +1,15 @@
 #include "gamestate.h"
 #include "segment.h"
 #include <vector>
-#include <pair>
 
 namespace Ouroboros
 {
 	struct Level {
 		GameState currentState;
 		std::vector<Segment> segments;
+        std::vector<int> snake;
 		int snakelength;
-		std::pair<int, int> dimesions;
+        int width;
+        int height;
 	};
 }
