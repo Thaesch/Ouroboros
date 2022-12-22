@@ -1,6 +1,8 @@
+#pragma once
+
 namespace Ouroboros
 {
-	enum Segment
+	enum class Segment
 	{
 		empty,
 		snakehead,

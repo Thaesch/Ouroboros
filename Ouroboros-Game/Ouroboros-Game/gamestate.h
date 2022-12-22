@@ -1,6 +1,8 @@
+#pragma once
+
 namespace Ouroboros
 {
-	enum GameState
+	enum class GameState
 	{
 		running,
 		crashed,

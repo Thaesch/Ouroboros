@@ -3,6 +3,16 @@
 
 namespace Ouroboros
 {
+	static Level ApplyMove(std::vector<int> snake, Level oldLevel)
+	{
+		// update tail and check for game end
+		oldLevel.segments[*(oldLevel.snake.end() - 1)] = Segment::empty;
+
+		// Update snake head and check for game end
+		// TODO
+		return Level();
+	}
+
 	static Level Generate()
 	{
 		return { 
@@ -54,12 +64,4 @@ namespace Ouroboros
 		// ToDo: Move Snake and update GameState
 		return level;
 	}
-
-    static Level ApplyMove(std::vector<int> newSnake, Level oldLevel){
-        // update tail and check for game end
-        oldLevel.segments[*(oldLevel.snake.end() - 1)] = Segment::empty;
-        
-        // Update snake head and check for game end
-        // TODO
-    }
 }

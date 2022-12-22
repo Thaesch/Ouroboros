@@ -1,3 +1,5 @@
+#pragma once
+
 #include "gamestate.h"
 #include "segment.h"
 #include <vector>
