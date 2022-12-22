@@ -5,5 +5,5 @@ namespace Ouroboros
     struct LevelChange {
         int index;
         Segment nextSegment;
-    }
+    };
 }

@@ -9,7 +9,7 @@ namespace Ouroboros
 			GameState::running, 
 			{Segment::empty, Segment::empty,     Segment::empty,
 			 Segment::empty, Segment::snakehead, Segment::empty}, 
-			2, 
+			{2},
 			3,
             2
 		};
@@ -20,7 +20,7 @@ namespace Ouroboros
 		// ToDo: Move Snake and update GameState
         std::vector<int> newSnake;
         
-        if(level.snake[0] % width == level.width - 1)
+        if(level.snake[0] % level.width == level.width - 1)
         {
             newSnake.push_back(level.snake[0]);
         }
@@ -57,7 +57,7 @@ namespace Ouroboros
 
     static Level ApplyMove(std::vector<int> newSnake, Level oldLevel){
         // update tail and check for game end
-        oldLevel.segments[*(oldLevel.snake.end() - 1)] = segments::empty;
+        oldLevel.segments[*(oldLevel.snake.end() - 1)] = Segment::empty;
         
         // Update snake head and check for game end
         // TODO

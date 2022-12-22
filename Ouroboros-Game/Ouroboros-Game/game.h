@@ -17,5 +17,5 @@ namespace Ouroboros
 
 		Level level;
 		Command currentMove;
-	}
+	};
 }

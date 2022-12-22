@@ -1,2 +1,2 @@
-private:
-    static Level ApplyMove(std::vector<int> newSnake, Level oldLevel);
+//private:
+    //static Level ApplyMove(std::vector<int> newSnake, Level oldLevel);

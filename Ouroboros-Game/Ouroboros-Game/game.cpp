@@ -3,7 +3,7 @@
 
 namespace Ouroboros 
 {
-	Game::Run()
+	void Game::Run()
 	{
 		while (true)
 		{
@@ -13,17 +13,17 @@ namespace Ouroboros
 		}
 	}
 
-	Game::ProcessInput()
+	void Game::ProcessInput()
 	{
 
 	}
 
-	Game::Update() 
+	void Game::Update() 
 	{
 		currentMove.Execute(level);
 	}
 
-	Game::Render() 
+	void Game::Render() 
 	{
 	
 	}
